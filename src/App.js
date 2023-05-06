@@ -5,6 +5,9 @@ import PharmacieForm  from "./components/PharmacieForm";
 import ZoneByCity from "./components/pgarde";
 import Details from "./components/details";
 import Test  from "./components/test";
+import Zone2  from "./components/Zone2";
+import Zone1  from "./components/Zone1";
+
 import City  from "./components/city";
 import Zone  from "./components/Zone";
 import 'bootstrap/js/src/collapse.js';
@@ -26,6 +29,7 @@ function App() {
           <Route path="/details" element={<Details />} />
           <Route path="/city" element={<City />} />
           <Route path="/zone" element={<Zone />} />
+          
         </Routes>
       </div>
       <Footer />

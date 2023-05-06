@@ -6,6 +6,7 @@ const City = () => {
 const [cities, setCities] = useState([]);
 const [cityName, setCityName] = useState('');
 const [cityId, setCityId] = useState('');
+const [cityv, setCityv] = useState('');
 useEffect(() => {
 getCities();
 }, []);
@@ -43,6 +44,9 @@ const updateCity = async () => {
         const response = await axios.put(`api/villes/update/${cityId}`, { nom: cityName });
         const updatedCities = cities.map((city) => {
         if (city.id === response.data.id) {
+            
+
+
         return response.data;
         }
         return city;
@@ -84,7 +88,7 @@ return (
 <td>{city.nom}</td>
 <td>
 <button className="btn btn-primary btn-sm mx-1" onClick={() =>
-getCityById(city.id)}>
+getCityById(city.id) } >
 Edit
 </button>
 <button className="btn btn-danger btn-sm" onClick={() =>

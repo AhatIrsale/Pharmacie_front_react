@@ -31,14 +31,14 @@ function Header() {
         >
           <Nav.Link href="/">Accueil</Nav.Link>
           <Nav.Link href="/test">A propos</Nav.Link>
-          <NavDropdown title="Contact" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="/pgarde">Action</NavDropdown.Item>
+          <NavDropdown title="More Action" id="navbarScrollingDropdown">
+            <NavDropdown.Item href="/pgarde">Recherhe Pharmacie par Ville | Zone </NavDropdown.Item>
             <NavDropdown.Item href="/zone">
-              Another action
+              Gestion VILLE 
             </NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="/city">
-              Something else here
+              Gestion Zone
             </NavDropdown.Item>
           </NavDropdown>
          
